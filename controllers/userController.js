@@ -16,7 +16,7 @@ const login = asyncHelper(async (req, res) => {
                     lastname :User.lastname, 
                     username:User.username
             }
-            const accessToken = jwt.sign(user,process.env.JWT_KEY,{expiresIn:"1m"})
+            const accessToken = jwt.sign(user,process.env.JWT_KEY,{expiresIn:"1000m"})
             console.log(req.body);
             res.status(200).json({ accessToken , user });
         }else{
