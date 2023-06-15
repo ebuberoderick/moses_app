@@ -49,7 +49,7 @@ const register = asyncHelper(async (req, res) => {
 })
 
 const get_user = asyncHelper(async (req, res) => {
-    res.status(200).json(req.user);
+    res.status(200).json(req);
 })
 
 
