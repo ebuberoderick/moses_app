@@ -8,7 +8,7 @@ app.use(express.json());
 
 
 app.use('/auth', require('./routes/authRoutes'))
-app.use('/', require('./routes/userRoutes'))
+// app.use('/', require('./routes/userRoutes'))
 app.use(errorHandler)
 
 mongoose.connect(process.env.CONNECTION_STRING)
